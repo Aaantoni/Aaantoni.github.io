@@ -1,0 +1,41 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  background: #090715;
+  backface-visibility: hidden;
+  color: #fafafa;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-self-center {
+  justify-self: center;
+}
+
+.d-flex.a-start {
+  align-items: flex-start;
+}
+.d-grid.a-start {
+  align-items: start;
+}
+
+.a-center {
+  align-items: center;
+}

@@ -1,7 +1,7 @@
 article {
   width: 100%;
   max-width: 1200px;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-gap: 20px;
   margin: 20px;
 }
@@ -18,21 +18,39 @@ article footer {
   grid-gap: 20px;
 }
 .wish-list .list-item {
-  background: #fffbfa;
+  background: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.5);
-  transition: 0.15s all ease-in-out;
-  /*  &:hover {
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /*  transition: 0.15s all ease-in-out;
+      &:hover {
       transform: scale(1.1);
       box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
     } */
+}
+.wish-list .list-item:first-child {
+  animation: wiggle 2s ease-in-out 2s infinite;
 }
 .wish-list .list-item .link {
   grid-template: "main" 1fr/1fr;
   align-content: stretch;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.wish-list .list-item .link.important {
+  outline: 6px solid red;
+  outline-offset: -6px;
+}
+.wish-list .list-item .link.important:hover::after {
+  opacity: 0;
+}
+.wish-list .list-item .link:hover .image {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
 .wish-list .list-item .link:hover .overlay {
   transform: translateY(0);
@@ -47,7 +65,7 @@ article footer {
   position: relative;
   text-shadow: 0 0 20px #000;
   padding: 20px;
-  cursor: pointer;
+  text-align: center;
 }
 .wish-list .list-item .overlay::before {
   content: "";
@@ -62,8 +80,11 @@ article footer {
   z-index: -1;
 }
 .wish-list .list-item .overlay .info {
-  text-align: center;
   font-weight: 400;
+}
+.wish-list .list-item .overlay p {
+  font-size: 0.75em;
+  padding: 0 10px;
 }
 .wish-list .list-item .overlay button {
   padding: 5px 10px;
@@ -86,9 +107,38 @@ article footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.3s all ease-in-out;
 }
 .wish-list .list-item .image#crucial-ram {
-  background-image: url("https://images.morele.net/i1064/858239_0_i1064.png");
+  background-image: url("https://pics.crucial.com/wcsstore/CrucialSAS/images/resources/medium/package/ddr4-sodimm.png");
+}
+.wish-list .list-item .image#powerbank {
+  background-image: url("https://swiatbaterii.pl/13926-thickbox_default/power-bank-green-cell-30000mah-szybkie-ladowanie.jpg");
+  background-size: 460px;
+}
+.wish-list .list-item .image#pendrive {
+  background-image: url("https://www.sandisk.com/content/dam/sandisk-main/en_us/assets/product/retail/DualDrive_TypeC-left_TypeCopen.png");
+}
+.wish-list .list-item .image#jbl-charge {
+  background-image: url("https://transform.dis.commercecloud.salesforce.com/transform/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw19788fee/JBL_Charge3_Black_Front_x2-1606x1606px.jpg?sfrm=png&sw=512&sh=512&sm=fit");
+  background-size: cover;
+  background-position: bottom;
+}
+.wish-list .list-item .image#fenda {
+  background-image: url("https://minido.pl/9626/glosniki-fenda-r30bt-bluetooth-nfc-2-0.jpg");
+}
+.wish-list .list-item .image#coffee-mill {
+  background-image: url("https://www.cirocoffeeboutique.co.za/media/catalog/product/cache/1/image/670x/9df78eab33525d08d6e5fb8d27136e95/h/a/hario_coffee_mill_dome_grinder_mcd-2.png");
+}
+.wish-list .list-item .image#kettle {
+  background-image: url("https://www.coffeedesk.pl/photos/products/normal/c85ad6be7e7e2ff3cb7ecefe0c3b8e01.jpg");
+  background-size: cover;
+}
+.wish-list .list-item .image#pandemic-legacy {
+  background-image: url("https://cf.geekdo-images.com/imagepagezoom/img/5NihPpUAQLpQWLfrJAvHEO2XMk0=/fit-in/1200x900/filters:no_upscale()/pic2738696.png");
+}
+.wish-list .list-item .image#pandemic-cthulhu {
+  background-image: url("https://cf.geekdo-images.com/imagepagezoom/img/DoTV_qAgu4fU3HipIWIaqSa5k0c=/fit-in/1200x900/filters:no_upscale()/pic3124526.jpg");
 }
 
 @keyframes boop {
@@ -100,6 +150,20 @@ article footer {
   }
   10% {
     transform: scale(1);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+  }
+  4% {
+    transform: rotate(2deg);
+  }
+  8% {
+    transform: rotate(-3deg);
+  }
+  12% {
+    transform: rotate(0);
   }
 }
 

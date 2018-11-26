@@ -8,7 +8,6 @@ html {
 }
 *, *::before, *::after {
 	box-sizing: inherit;
-	backface-visibility: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -57,4 +56,24 @@ table {
 
 :focus {
 	outline: 0;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+     -moz-user-select: none;
+      -ms-user-select: none;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
 }

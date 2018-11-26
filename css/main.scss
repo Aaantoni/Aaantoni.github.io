@@ -1,21 +1,30 @@
 html {
   font-size: 16px;
+  cursor: default;
+  user-select: none;
+}
+
+* {
+  cursor: inherit;
+  user-select: inherit;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   background: #090715;
-  backface-visibility: hidden;
   color: #fafafa;
   width: 100%;
   max-width: 100vw;
   min-height: 100vh;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  cursor: default;
-  user-select: none;
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 .d-flex {

@@ -123,7 +123,7 @@ article {
       background-position: center;
       transition: 0.3s all ease-in-out;
       &#crucial-ram {
-        background-image: url("https://pics.crucial.com/wcsstore/CrucialSAS/images/resources/medium/package/ddr4-sodimm.png");
+        background-image: url("../images/crucial-ram.png");
       }
       &#powerbank {
         background-image: url("https://swiatbaterii.pl/13926-thickbox_default/power-bank-green-cell-30000mah-szybkie-ladowanie.jpg");
@@ -133,25 +133,26 @@ article {
         background-image: url("https://www.sandisk.com/content/dam/sandisk-main/en_us/assets/product/retail/DualDrive_TypeC-left_TypeCopen.png");
       }
       &#jbl-charge {
-        background-image: url("https://transform.dis.commercecloud.salesforce.com/transform/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw19788fee/JBL_Charge3_Black_Front_x2-1606x1606px.jpg?sfrm=png&sw=512&sh=512&sm=fit");
-        background-size: cover;
-        background-position: bottom;
+        background-image: url("../images/jbl-charge.png");
       }
       &#fenda {
         background-image: url("https://minido.pl/9626/glosniki-fenda-r30bt-bluetooth-nfc-2-0.jpg");
       }
       &#coffee-mill {
-        background-image: url("https://www.cirocoffeeboutique.co.za/media/catalog/product/cache/1/image/670x/9df78eab33525d08d6e5fb8d27136e95/h/a/hario_coffee_mill_dome_grinder_mcd-2.png");
+        background-image: url("../images/coffee-mill.png");
       }
       &#kettle {
         background-image: url("https://www.coffeedesk.pl/photos/products/normal/c85ad6be7e7e2ff3cb7ecefe0c3b8e01.jpg");
         background-size: cover;
       }
       &#pandemic-legacy {
-        background-image: url("https://cf.geekdo-images.com/imagepagezoom/img/5NihPpUAQLpQWLfrJAvHEO2XMk0=/fit-in/1200x900/filters:no_upscale()/pic2738696.png");
+        background-image: url("../images/pandemic-legacy.png");
       }
       &#pandemic-cthulhu {
         background-image: url("https://cf.geekdo-images.com/imagepagezoom/img/DoTV_qAgu4fU3HipIWIaqSa5k0c=/fit-in/1200x900/filters:no_upscale()/pic3124526.jpg");
+      }
+      &#zara-trench {
+        background-image: url("../images/zara-trench.png");
       }
     }
   }

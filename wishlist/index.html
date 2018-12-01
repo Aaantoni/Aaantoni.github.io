@@ -14,106 +14,128 @@
   <meta name="theme-color" content="#090715">
 </head>
 
-<body class="d-flex j-center">
-  <article class="d-grid">
-    <header class="j-self-center">
-      <h1>This is a wishlist.</h1>
-      <p>Cool things I wish I had.</p>
-    </header>
-    <main>
-      <ul class="d-grid wish-list">
-        <li class="list-item">
-          <div class="d-grid link important">
-            <div class="image" id="crucial-ram"></div>
-            <a href="https://www.morele.net/pamiec-do-laptopa-crucial-ddr4-sodimm-8gb-2400mhz-cl17-ct8g4sfs824a-858239/" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Pamięć do laptopa<br/>Crucial DDR4 SODIMM 8GB 2400MHz 1.2V</h3>
-              <p>NOTE: chyba jedyny przedmiot na liście bez żadnej alternatywy</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="powerbank"></div>
-            <a href="https://www.morele.net/powerbank-green-cell-30000mah-pb114cz-4146749/" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Powerbank Green Cell 30000mAh</h3>
-              <p>ew. dowolny powerbank z parametrami:<br/>min. 20000mAh; 9V–12V; 3A; Qualcomm QC 3.0</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="pendrive"></div>
-            <a href="https://www.morele.net/pendrive-sandisk-ultra-dual-drive-64gb-sdddc2-064g-g46-1011240/" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Pendrive SanDisk Ultra Dual Drive 64GB</h3>
-              <p>ew. dowolny pendrive 32GB+ z USB 3.1 Type-C</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="jbl-charge"></div>
-            <a href="https://www.morele.net/glosnik-jbl-charge-3-czarny-974009/" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">JBL Charge 3</h3>
-              <p>ew. dowolny przenośny głośnik bluetooth o mocy min. 15W</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="fenda"></div>
-            <a href="https://www.morele.net/glosniki-komputerowe-fenda-r30bt-black-r30btbk-977758/" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Głośniki komputerowe Fenda R30BT</h3>
-              <p>ew. dowolne głośniki komputerowe 2.0/2.1 o mocy min. 25W z funkcją bluetooth</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="coffee-mill"></div>
-            <a href="https://www.coffeedesk.pl/product/3079/Hario-Coffee-Mill-Dome" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Hario Coffee Mill Dome</h3>
-              <p>ew. dowolny młynek do kawy Hario</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="kettle"></div>
-            <a href="https://www.coffeedesk.pl/product/539/Hario-Buono-Kettle-1L" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Hario Buono Kettle</h3>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="pandemic-legacy"></div>
-            <a href="https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Pandemic Legacy: Season 1</h3>
-              <p>Wersja polska albo angielska, I don’t care.</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="pandemic-cthulhu"></div>
-            <a href="https://boardgamegeek.com/boardgame/192153/pandemic-reign-cthulhu" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">Pandemic: Czas Cthulhu</h3>
-              <p>Wersja polska albo angielska, I don’t care.</p>
-            </a>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="d-grid link">
-            <div class="image" id="zara-trench"></div>
-            <a href="https://www.zara.com/pl/pl/asymetryczny-p%C5%82aszcz-pelerynowy-z-teksturowanym-wyko%C5%84czeniem-p05372310.html" target="_blank" rel="external" class="overlay d-grid">
-              <h3 class="info">ZARA — Asymetryczny płaszcz pelerynowy z teksturowanym wykończeniem</h3>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </main>
-    <footer class="j-self-center">Antoni Skrzypczyk</footer>
-  </article>
+<body class="d-grid j-center" id="wishlist">
+  <header class="j-self-center">
+    <h1>This is a wishlist.</h1>
+    <p>Cool things I wish I had.</p>
+  </header>
+  <main>
+    <ul class="d-grid wish-list">
+      <li class="list-item important">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="crucial-ram"></div>
+          <a href="https://www.morele.net/pamiec-do-laptopa-crucial-ddr4-sodimm-8gb-2400mhz-cl17-ct8g4sfs824a-858239/" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Pamięć do laptopa<br/>Crucial DDR4 SODIMM 8GB 2400MHz 1.2V</h3>
+            <p>NOTE: chyba jedyny przedmiot na liście bez żadnej alternatywy</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="powerbank"></div>
+          <a href="https://www.morele.net/powerbank-green-cell-30000mah-pb114cz-4146749/" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Powerbank Green Cell 30000mAh</h3>
+            <p>ew. dowolny powerbank z parametrami:<br/>min. 20000mAh; 9V–12V; 3A; Qualcomm QC 3.0</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="pendrive"></div>
+          <a href="https://www.morele.net/pendrive-sandisk-ultra-dual-drive-64gb-sdddc2-064g-g46-1011240/" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Pendrive SanDisk Ultra Dual Drive 64GB</h3>
+            <p>ew. dowolny pendrive 32GB+ z USB 3.1 Type-C</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="jbl-charge"></div>
+          <a href="https://www.morele.net/glosnik-jbl-charge-3-czarny-974009/" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">JBL Charge 3</h3>
+            <p>ew. dowolny przenośny głośnik bluetooth o mocy min. 15W</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="fenda"></div>
+          <a href="https://www.morele.net/glosniki-komputerowe-fenda-r30bt-black-r30btbk-977758/" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Głośniki komputerowe Fenda R30BT</h3>
+            <p>ew. dowolne głośniki komputerowe 2.0/2.1 o mocy min. 25W z funkcją bluetooth</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="coffee-mill"></div>
+          <a href="https://www.coffeedesk.pl/product/3079/Hario-Coffee-Mill-Dome" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Hario Coffee Mill Dome</h3>
+            <p>ew. dowolny młynek do kawy Hario</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="kettle"></div>
+          <a href="https://www.coffeedesk.pl/product/539/Hario-Buono-Kettle-1L" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Hario Buono Kettle</h3>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="pandemic-legacy"></div>
+          <a href="https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Pandemic Legacy: Season 1</h3>
+            <p>Wersja polska albo angielska, I don’t care.</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="pandemic-cthulhu"></div>
+          <a href="https://boardgamegeek.com/boardgame/192153/pandemic-reign-cthulhu" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">Pandemic: Czas Cthulhu</h3>
+            <p>Wersja polska albo angielska, I don’t care.</p>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="love-letter"></div>
+          <a href="https://boardgamegeek.com/boardgame/196326/love-letter-premium" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">List Miłosny (edycja rozszerzona)</h3>
+          </a>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="d-grid link a-stretch">
+          <div class="image" id="zara-trench"></div>
+          <a href="https://www.zara.com/pl/pl/asymetryczny-p%C5%82aszcz-pelerynowy-z-teksturowanym-wyko%C5%84czeniem-p05372310.html" target="_blank" rel="external" class="overlay d-grid p-center relative">
+            <h3 class="info">ZARA — Asymetryczny płaszcz pelerynowy z teksturowanym wykończeniem</h3>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <footer class="j-self-center">Antoni Skrzypczyk</footer>
+  <script>
+    const items = Array.from(document.querySelectorAll(".list-item"));
+    
+    function clear() {
+      items.forEach((e) => {
+        e.classList.remove("active");
+      })
+    }
+    
+    items.forEach((element) => {
+      element.querySelector(".image").addEventListener('click', (e) => {
+        clear();
+        e.currentTarget.closest(".list-item").classList.add("active");
+      })
+    })
+  </script>
 </body>
 
 </html>

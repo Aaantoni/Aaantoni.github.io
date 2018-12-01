@@ -17,14 +17,37 @@ body {
   width: 100%;
   max-width: 100vw;
   min-height: 100vh;
+  padding: 20px;
+  grid-template-columns: minmax(auto, 1200px);
+}
+
+#index {
+  grid-template: 1fr auto / minmax(auto, 1200px);
+  h2 + p {
+    margin-top: 2em;
+    a {
+      cursor: pointer;
+      font-weight: bolder;
+      color: red;
+    }
+  }
+}
+
+footer {
+  font-size: 0.75em;
+  padding: 5px 10px;
 }
 
 h1 {
   font-size: 2em;
 }
 
+h2 {
+  font-size: 1.625em;
+}
+
 h3 {
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
 
 .d-flex {
@@ -52,4 +75,16 @@ h3 {
 
 .a-center {
   align-items: center;
+}
+
+.a-stretch {
+  align-items: stretch;
+}
+
+.p-center {
+  place-items: center;
+}
+
+.relative {
+  position: relative;
 }

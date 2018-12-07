@@ -25,12 +25,11 @@ header {
     }
     
     &:hover, &.active {
-      animation: boop 4s ease-in-out 2s infinite;
+      animation: boop 4s ease-in-out 0.1s infinite;
     }
     
     &.important {
-      grid-column: 1 / -1;
-      grid-row: span 2;
+      grid-area: 1 / 1 / span 2 / -1;
       & > .link {
         outline: 6px solid red;
         outline-offset: -6px;
@@ -139,19 +138,22 @@ header {
       &#love-letter {
         background-image: url("../images/love-letter.png");
       }
+      &#twin-peaks {
+        background-image: url("../images/twin-peaks.png");
+      }
     }
   }
 }
 
 @keyframes boop {
   0% { transform: scale(1); }
-  4% { transform: scale(0.975); }
-  8% { transform: scale(1); }
+  10% { transform: scale(1.03125); }
+  20% { transform: scale(1); }
 }
 
 @keyframes wiggle {
   0% { transform: rotate(0); }
-  4% { transform: rotate(2deg); }
-  8% { transform: rotate(-3deg); }
+  4% { transform: rotate(1deg); }
+  7% { transform: rotate(-2deg); }
   12% { transform: rotate(0); }
 }

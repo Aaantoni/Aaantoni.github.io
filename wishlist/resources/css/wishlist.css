@@ -29,11 +29,10 @@ header {
   animation: wiggle 2s ease-in-out 2s infinite;
 }
 .wish-list .list-item:hover, .wish-list .list-item.active {
-  animation: boop 4s ease-in-out 2s infinite;
+  animation: boop 4s ease-in-out 0.1s infinite;
 }
 .wish-list .list-item.important {
-  grid-column: 1/-1;
-  grid-row: span 2;
+  grid-area: 1/1/span 2/-1;
 }
 .wish-list .list-item.important > .link {
   outline: 6px solid red;
@@ -128,15 +127,18 @@ header {
 .wish-list .list-item .image#love-letter {
   background-image: url("../images/love-letter.png");
 }
+.wish-list .list-item .image#twin-peaks {
+  background-image: url("../images/twin-peaks.png");
+}
 
 @keyframes boop {
   0% {
     transform: scale(1);
   }
-  4% {
-    transform: scale(0.975);
+  10% {
+    transform: scale(1.03125);
   }
-  8% {
+  20% {
     transform: scale(1);
   }
 }
@@ -145,10 +147,10 @@ header {
     transform: rotate(0);
   }
   4% {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
   }
-  8% {
-    transform: rotate(-3deg);
+  7% {
+    transform: rotate(-2deg);
   }
   12% {
     transform: rotate(0);

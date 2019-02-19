@@ -10,27 +10,16 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
-  background: #090715;
+  letter-spacing: 0.5px;
+  background: #181529;
   color: #fafafa;
   width: 100%;
   max-width: 100vw;
   min-height: 100vh;
   padding: 20px;
-  grid-template-columns: minmax(auto, 1200px);
-}
-
-#index {
   grid-template: 1fr auto/minmax(auto, 1200px);
-}
-#index h2 + p {
-  margin-top: 2em;
-}
-#index h2 + p a {
-  cursor: pointer;
-  font-weight: bolder;
-  color: red;
 }
 
 footer {
@@ -44,6 +33,14 @@ h1 {
 
 h2 {
   font-size: 1.625em;
+}
+h2 + p {
+  margin-top: 2em;
+}
+h2 + p a {
+  cursor: pointer;
+  font-weight: bolder;
+  color: red;
 }
 
 h3 {

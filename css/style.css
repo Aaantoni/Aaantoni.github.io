@@ -1,0 +1,87 @@
+:root {
+    --color-bg: #0b0e19;
+    --color-accent: #152238;
+    --color-link: #84c5fb;
+    --color-text: #dbe0e9;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1.5;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Alegreya Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link)
+}
+
+ul, ol {
+    list-style: none;
+}
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-accent); /* Customize the color as needed */
+    outline-offset: 2px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+button, input, select, textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+main {
+    display: grid;
+    width: 100dvw;
+    height: 100dvh;
+    place-items: center;
+}
+
+h1 {
+    font-family: "Alegreya", serif;
+    font-size: clamp(2rem, -1rem + 6.6667vw, 5rem);
+}

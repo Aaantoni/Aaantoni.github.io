@@ -8,7 +8,8 @@
 // @author      Aaantoni (https://github.com/Aaantoni)
 // @icon        https://icons.duckduckgo.com/ip3/rateyourmusic.com.ico
 // @homepageURL https://Aaantoni.github.io
-// @updateURL   https://Aaantoni.github.io/userscripts/rymchart_title.user.js
+// @downloadURL https://Aaantoni.github.io/userscripts/rym_chart_title.user.js
+// @updateURL   https://Aaantoni.github.io/userscripts/rym_chart_title.user.js
 // ==/UserScript==
 
 (function () {

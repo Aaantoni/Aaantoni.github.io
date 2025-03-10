@@ -19,7 +19,7 @@
         let newtitle = `Charts: ${RYMchart.state.chart_type_label}`;
 
         if (RYMchart.state.artist_include.length > 0) {
-            newtitle += ` ${RYMchart.state.chart_object_label} by ${RYMchart.state.artist_include.map(artist => artist.name).join(', ')}`;
+            newtitle += ` ${RYMchart.state.chart_object_label.replace(' (all)', '')} by ${RYMchart.state.artist_include.map(artist => artist.name).join(', ')}`;
         } else if (RYMchart.state.genre_include.length > 0 || RYMchart.state.sec_genre_include.length > 0 || RYMchart.state.genre_either_include.length > 0 || RYMchart.state.descriptor_include.length > 0) {
             let includedGenres = RYMchart.state.genre_include.map(genre => genre.name);
             let secGenres = RYMchart.state.sec_genre_include.map(genre => genre.name);
@@ -30,9 +30,9 @@
 
             if (descriptors.length > 0) newtitle += ` ${descriptors.join(', ')}`;
             if (allGenres.length > 0) newtitle += ` ${allGenres.join(', ')}`;
-            newtitle += ` ${RYMchart.state.chart_object_label}`;
+            newtitle += ` ${RYMchart.state.chart_object_label.replace(' (all)', '')}`;
         } else {
-            newtitle += ` ${RYMchart.state.chart_object_label}`;
+            newtitle += ` ${RYMchart.state.chart_object_label.replace(' (all)', '')}`;
         }
 
         document.title = newtitle + ' of ' + RYMchart.state.date_display.replace('All-time', 'all time') + ' - Rate Your Music';

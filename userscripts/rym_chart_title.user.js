@@ -4,7 +4,7 @@
 // @namespace   aaantoni.github.io
 // @match       *://*.rateyourmusic.com/charts/*
 // @grant       none
-// @version     1.0
+// @version     1.0.1
 // @author      Aaantoni (https://github.com/Aaantoni)
 // @icon        https://icons.duckduckgo.com/ip3/rateyourmusic.com.ico
 // @homepageURL https://Aaantoni.github.io

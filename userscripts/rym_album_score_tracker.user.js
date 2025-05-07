@@ -1,15 +1,18 @@
 // ==UserScript==
 // @name        RYM Album Score Tracker
-// @namespace   Violentmonkey Scripts
-// @match       https://rateyourmusic.com/release/*
+// @description Tracks users and their scores for albums on RYM. It allows you to mark albums as good or bad and saves the scores for each user. The script also provides a button to delete all saved users and their scores.
+// @namespace   aaantoni.github.io
+// @match       *://*.rateyourmusic.com/release/*
+// @version     1.0.1
+// @author      Aaantoni (https://github.com/Aaantoni)
+// @downloadURL https://Aaantoni.github.io/userscripts/rym_album_score_tracker.user.js
+// @updateURL   https://Aaantoni.github.io/userscripts/rym_album_score_tracker.user.js
+// @icon        https://icons.duckduckgo.com/ip3/rateyourmusic.com.ico
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_deleteValue
 // @grant       GM_addStyle
 // @grant       GM_addElement
-// @version     1.0
-// @author      @Aaantoni
-// @description Tracks users and their scores for albums on RYM. It allows you to mark albums as good or bad and saves the scores for each user. The script also provides a button to delete all saved users and their scores.
 // ==/UserScript==
 
 (function() {
@@ -28,6 +31,9 @@
 
   const css = `#theWholeThing {
     margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
 
     .ui_button {
       display: block;

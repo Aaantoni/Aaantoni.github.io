@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Userscripts</title>
+    <style>
+        :root {
+            --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            gap: 1rem;
+            font-family: var(--system-ui);
+            > a {
+                display: block;
+                padding: 1rem 2rem;
+                background-color: #f0f0f0;
+                text-decoration: none;
+                color: #333;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="/userscripts/rym_album_score_tracker.user.js">RYM Album Score Tracker</a>
+        <a href="/userscripts/rym_chart_descriptors.user.js">RYM Chart Descriptors</a>
+        <a href="/userscripts/rym_chart_title.user.js">RYM Chart Title</a>
+        <a href="/userscripts/rym_descriptormap.user.js">RYM Description Map</a>
+        <a href="/userscripts/rym_artist_addrelatedlinks.user.js">RYM Artist Add Related Links</a>
+    </main>
+</body>
+</html>

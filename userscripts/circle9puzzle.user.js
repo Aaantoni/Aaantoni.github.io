@@ -1,11 +1,14 @@
 // ==UserScript==
 // @name        circle9puzzle.com
-// @description Circle Nine and Circle Sum puzzle helpers
+// @description Circle Nine puzzle helpers
 // @author      Aaantoni
 // @namespace   https://aaantoni.github.io
-// @icon        https://icons.duckduckgo.com/ip3/circle9puzzle.com.ico
+// @homepageURL https://aaantoni.github.io
+// @downloadURL https://aaantoni.github.io/userscripts/circle9puzzle.user.js
+// @icon        https://www.google.com/s2/favicons?domain=circle9puzzle.com&sz=64
 // @match       https://circle9puzzle.com/*
-// @version     0.5
+// @tag         circle9puzzle.com
+// @version     0.5.1
 // @grant       none
 // ==/UserScript==
 

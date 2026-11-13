@@ -8,7 +8,7 @@
 // @icon        https://www.google.com/s2/favicons?domain=circle9puzzle.com&sz=64
 // @match       https://circle9puzzle.com/*
 // @tag         circle9puzzle.com
-// @version     0.5.1
+// @version     0.6
 // @grant       none
 // ==/UserScript==
 
@@ -79,6 +79,7 @@
         document.head.appendChild(style);
 
         const highlighted = new Set();
+        const buttons = new Map();
 
         // Visual-only overlay inside the puzzle svg; pointer-events: none keeps it
         // invisible to the puzzle's click/drag handling (which uses elementFromPoint).
@@ -159,12 +160,24 @@
                     b.setAttribute("aria-pressed", String(highlighted.has(n)));
                     sync();
                 });
+                buttons.set(n, b);
                 bar.appendChild(b);
             }
             return bar;
         }
 
         const bar = buildBar();
+        document.addEventListener("keydown", event => {
+            if (event.repeat || event.altKey || event.ctrlKey || event.metaKey ||
+                (event.target instanceof Element &&
+                    event.target.closest("input, textarea, select, [contenteditable]:not([contenteditable='false'])"))) {
+                return;
+            }
+            const number = Number(event.key);
+            if (number >= 1 && number <= 9 && Number.isInteger(number)) {
+                buttons.get(number).click();
+            }
+        });
         const wrap = document.createElement("div");
         wrap.id = WRAP_ID;
 
